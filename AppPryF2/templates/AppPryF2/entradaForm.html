@@ -1,0 +1,21 @@
+{% extends 'AppPryF2\formVarios.html' %}
+
+{% load static %}
+
+{% if miForm.errors%}
+    <p style='color: red;' >Revisa los datos</p>
+{% endif %}
+
+{% block 2 %}
+    <form action='' method='POST'>{% csrf_token %}
+            <table>
+                {{miForm.as_table}}
+            </table>
+        </br>
+            <input type='submit' value='Enviar'>
+        </form>
+{% endblock %}
+
+{% block 3 %}    
+    Entradas
+{% endblock%}  

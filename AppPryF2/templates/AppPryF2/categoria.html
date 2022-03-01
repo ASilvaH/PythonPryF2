@@ -1,0 +1,17 @@
+{% extends 'AppPryF2\productsC.html' %}
+
+{% block tituloPagina1 %}      
+    No solo de Café...
+{% endblock%}
+
+{% block tituloPagina2 %}      
+    Categorías
+{% endblock%}
+
+{% block contenidoQueCambia3 %}
+    <h3>{{categoria.nombre_cat}}</h3>
+    <a href="{% url 'verCategoria' categoria.id %}">Ver Categoría</a>
+    <a href="{% url 'deleteCategoria' categoria.id %}">Borrar</a>
+    <a href="{% url 'updateCategoria' categoria.id %}">Editar</a>
+    </br>
+{% endblock %}

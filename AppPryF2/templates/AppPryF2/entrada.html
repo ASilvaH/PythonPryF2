@@ -1,0 +1,16 @@
+{% extends 'AppPryF2\products.html' %}
+
+{% block tituloPagina1 %}      
+    No solo de Café...
+{% endblock%}
+
+{% block tituloPagina2 %}      
+    Entradas
+{% endblock%}
+
+{% block contenidoQueCambia1 %}
+        {{entrada.titulo}}</a><br>
+        <a href="{% url 'verEntrada' entrada.id %}">Ver Post</a><br>
+        <a href="{% url 'deleteEntrada' entrada.id %}">Borrar</a><br>
+        <a href="{% url 'updateEntrada' entrada.id %}">Editar</a>
+{% endblock %}

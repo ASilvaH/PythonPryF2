@@ -1,0 +1,23 @@
+{% extends 'AppPryF2\formVarios.html' %}
+
+{% load static %}
+
+{% block 2 %}
+    <form action='' method='POST' enctype="multipart/form-data">
+        
+    {% csrf_token %}
+    <table>
+        {{ form.as_p }}
+    </table>
+        <input type='submit' value='Actualizar'>
+            
+    </form>
+{% endblock %}
+
+{% block 3 %}    
+    Avatar
+{% endblock%} 
+
+{% block 4 %}
+    Subir Nuevo Avatar
+{% endblock %}

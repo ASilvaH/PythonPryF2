@@ -1,0 +1,22 @@
+{% extends 'AppPryF2\formVarios.html' %}
+
+{% load static %}
+
+{% block 2 %}
+    <form action='' method='POST'>{% csrf_token %}
+        Nombre: {{usuario.nombre}}</br>
+        Apellido: {{usuario.apellido}}</br>
+        Nombre Usuario: {{usuario.nom_usuario}}</br>
+        Mail: {{usuario.mail}}</br>
+        Fecha Alta: {{usuario.fecha_alta}}</br>
+        <input type='submit' value='Borrar'>
+    </form>
+{% endblock %}
+
+{% block 3 %}    
+    Usuario
+{% endblock%} 
+
+{% block 4 %}
+    ¿Seguro de lo que vas a hacer?
+{% endblock %}

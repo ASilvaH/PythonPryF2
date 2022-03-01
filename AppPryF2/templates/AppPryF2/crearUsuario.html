@@ -1,0 +1,25 @@
+{% extends 'AppPryF2\formVarios.html' %}
+
+{% load static %}
+
+{% if form.errors%}
+    <p style='color: red;' >Revisa los datos</p>
+{% endif %}
+
+{% block 2 %}
+    <form action='' method='POST'>{% csrf_token %}
+            <table>
+                {{form.as_table}}
+            </table>
+        </br>
+            <input type='submit' value='Enviar'>
+        </form>
+{% endblock %}    
+
+{% block 3 %}    
+    Autores
+{% endblock%}  
+
+{% block 4 %}
+    Agrega los datos nuevos
+{% endblock %}

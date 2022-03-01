@@ -1,0 +1,23 @@
+{% extends 'AppPryF2\mostrarBuscar.html' %}
+
+{% load static %}
+
+{% block 2 %}
+
+{% if categorias %}
+
+<ul>
+    {% for cat in categorias %}
+    ID: {{cat.id}} </br>
+    Nombre: {{cat.nombre_cat}} </br>
+    Fecha Creación: {{cat.fecha_creacion}} </br>
+    {% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}
+
+{% block 3 %}    
+    Categorías
+{% endblock%}  

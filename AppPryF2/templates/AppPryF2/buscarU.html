@@ -1,0 +1,25 @@
+{% extends 'AppPryF2\mostrarBuscar.html' %}
+
+{% load static %}
+
+{% block 2 %}
+
+{% if usuarios %}
+
+<ul>
+    {% for usu in usuarios %}
+    ID: {{usu.id}}</br>
+    Nombre: {{usu.nombre}}</br>
+    Apellido: {{usu.apellido}}</br>
+    Mail: {{usu.mail}}</br>
+    Fecha Alta: {{usu.fecha_alta}}</br>
+    {% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}
+
+{% block 3 %}    
+    Autores
+{% endblock%}  

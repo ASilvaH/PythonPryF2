@@ -1,0 +1,17 @@
+{% extends 'AppPryF2\productsU.html' %}
+
+{% block tituloPagina1 %}      
+    No solo de Café...
+{% endblock%}
+
+{% block tituloPagina2 %}      
+    Autores
+{% endblock%}
+
+{% block contenidoQueCambia1 %}
+    <a>{{usuario.nombre}}</a><br>
+    <a href="{% url 'verUsuario' usuario.id %}">Ver Autor</a><br>
+    <a href="{% url 'deleteUsuario' usuario.id %}">Borrar</a><br>
+    <a href="{% url 'updateUsuario' usuario.id %}">Editar</a>
+    </br>
+{% endblock %}

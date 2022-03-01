@@ -1,0 +1,23 @@
+{% extends 'AppPryF2\formVarios.html' %}
+
+{% load static %}
+
+{% if formUsu.errors%}
+    <p style='color: red;' >Revisa los datos</p>
+{% endif %}
+
+{% block 2 %}
+    <form action='' method='POST'>{% csrf_token %}
+            <table>
+                {{formUsu.as_table}}
+            </table>
+        </br>
+            <input type='submit' value='Enviar'>
+        </form>
+{% endblock %}    
+
+{% block 3 %}    
+    Autores
+{% endblock%}  
+</body>
+</html>

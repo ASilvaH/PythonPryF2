@@ -1,0 +1,25 @@
+{% extends 'AppPryF2\mostrarBuscar.html' %}
+
+{% load static %}
+
+{% block 2 %}
+
+{% if entradas %}
+
+<ul>
+    {% for ent in entradas %}
+    ID: {{ent.id}} </br>
+    Título: {{ent.titulo}} </br>
+    Entrada: {{ent.entrada}} </br>
+    Usuario: {{ent.nom_usuario}} </br>
+    Fecha Publicación: {{ent.fecha_publicacion}} </br>
+    {% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}
+
+{% block 3 %}    
+    Entradas
+{% endblock%}  

@@ -1,0 +1,16 @@
+{% extends 'AppPryF2\buscarForm.html' %}
+
+{% load static %}
+
+{% block 2 %}
+<form action="buscarU" method="GET">
+    <p>Busca autores por nombre de usuario</p>
+    <input type="text" name="nom_usuario" nom_usuario="nom_usuario">
+    <input type="submit" value="Buscar">
+
+</form>
+{% endblock %}
+
+{% block 3 %}    
+    Autores
+{% endblock%}  

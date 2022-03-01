@@ -1,0 +1,19 @@
+{% extends 'AppPryF2\formVarios.html' %}
+
+{% load static %}
+
+{% block 2 %}
+    <form action='' method='POST'>{% csrf_token %}
+        Nombre: {{categoria.nombre_cat}}</br>
+        Fecha Creación: {{categoria.fecha_creacion}}</br>
+            <input type='submit' value='Borrar'>
+        </form>
+{% endblock %}
+
+{% block 3 %}    
+    Categorías
+{% endblock%} 
+
+{% block 4 %}
+    ¿Seguro de lo que vas a hacer?
+{% endblock %}
